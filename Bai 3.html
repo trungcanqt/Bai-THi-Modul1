@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+  let KT = prompt('nhap vao chuoi ky tu');
+  var newArr = KT.split('');
+  function demKT(newArr) {
+    let Dem = 0;
+    for (let i = 0; i < newArr.length; i++) {
+      if (newArr[i] == 'a' || newArr[i] == 'e' || newArr[i] == 'i' || newArr[i] == 'o' || newArr[i] == 'u') {
+        Dem++;
+      }
+    }return Dem;
+  }
+  if (demKT(newArr)==0){
+      alert('false');
+  }else {
+      alert('so nguyen am trong chuoi la : '+demKT(newArr));
+  }
+
+</script>
+</body>
+</html>
